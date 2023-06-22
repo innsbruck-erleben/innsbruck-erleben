@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Bike Trail Tirol Beispiel</title>
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="icons/start.png.png" type="image/x-icon">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Leaflet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+        integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+        integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
+
+    <!-- Leaflet Providers -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-providers/1.13.0/leaflet-providers.min.js"
+        integrity="sha512-5EYsvqNbFZ8HX60keFbe56Wr0Mq5J1RrA0KdVcfGDhnjnzIRsDrT/S3cxdzpVN2NGxAB9omgqnlh4/06TvWCMw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Leaflet FullScreen -->
+    <script src='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/Leaflet.fullscreen.min.js'></script>
+    <link href='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/leaflet.fullscreen.css'
+        rel='stylesheet' />
+        
+    <!-- leaflet-elevation -->
+    <link rel="stylesheet" href="https://unpkg.com/@raruto/leaflet-elevation/dist/leaflet-elevation.css" />
+    <script src="https://unpkg.com/@raruto/leaflet-elevation/dist/leaflet-elevation.js"></script>
+
+    <!-- eigene Stile und Hauptskript -->
+    <link rel="stylesheet" href="main.css">
+    <script src="etappen.js"></script>
+    <script defer src="main.js"></script>
+</head>
+
+<body>
+    <main>
+        <header>
+            <h2><i class="fa-solid fa-person-biking"></i> Bike Trail Tirol Beispiel</h2>
+            <nav>
+                <i class="fab fa-github"></i> <a href="https://github.com/webmapping/biketirol">Github</a>
+            </nav>
+        </header>
+        <article>
+            <h1><a href=""></a>Etappe 29: Landeck - Ischgl</h1>
+            <p>Diese anspruchsvolle Etappe bringt Sie von der historischen Alpenstadt Landeck durch das Paznauntal in
+                den actiongeladenen Ort Ischgl. 33 Kilometer und 1.250 zu überwindende Höhenmeter erfordern Können und
+                Kondition. Dafür erwarten Sie auf dieser Strecke interessante und abwechslungsreiche Trails.</p>
+            
+                <select name = "pulldown" id="pulldown">
+                </select>
+            <div id="map"></div>
+            <div id="profile"></div>
+
+            <h3>Streckenbeschreibung</h3>
+            <p>Vom Zentrum Landecks fährt man kurz auf der Hauptstraße Richtung Süden, ehe man auf der Holzbrücke den
+                Inn überquert. Hier folgt man den grünen Radwegweisern Richtung Zams, vorbei am Gerichtsgebäude bis man
+                bei einem gelben Wanderwegweiser links Richtung Zirmegg abzweigt. Nun folgt man einem asphaltierten
+                Zufahrtsweg aufwärts, bis man die Straße nach Tobadill erreicht. Auf dieser geht es weiter bergan nach
+                Tobadill (1 Stunde ab Landeck). Insgesamt radelt man weiterhin mehr ansteigend als abwärts bis in den
+                Weiler Hintergiggl. Dort verlässt man die Asphaltstraße und es geht auf einer Schiebestrecke
+                „Rundwanderweg See-Dorf“ auf einem Waldweg zum Weiler Frodenegg. Nun folgt man den gelben Schildern auf
+                der Zufahrtstraße bis nach See hinunter (1 Stunde 15 Minuten ab Tobadill). Im Dorf radelt man 400 Meter
+                auf der Talstraße einwärts, bis man rechts zum Parkplatz der Bergbahnen See abzweigt. Hier führt die
+                Strecke kurz talauswärts ansteigend auf der Bikeroute 743. Schon nach ein paar hundert Metern zweigt man
+                aber links in den Paznauner Talweg (Bikeroute 737) ab. Den meist gelben Hinweisschildern folgt man nun
+                am Sonnenhang bis Kappl (1,5 Stunden ab See). Weiter führt die Etappe am Sonnenhang entlang auf dem
+                Radweg Kappl-Ischgl (741) bis ins Zentrum von Ischgl (1 Stunde 15 Minuten ab Kappl).</p>
+
+        </article>
+        <footer>
+            <strong>Datenquellen:</strong>
+            <nav>
+                <a href="https://www.tirol.at/reisefuehrer/sport/mountainbiken/bike-trail-tirol">Bike Trail Tirol
+                    (Online Reiseführer Tirol)</a> |
+                <a
+                    href="https://www.tirol.at/reisefuehrer/sport/radfahren/biketouren/a-bike-trail-tirol-landeck-ischgl">Etappe
+                    29: Landeck - Ischgl</a>
+                <a href="https://www.data.gv.at/katalog/de/dataset/land-tirol_elektronischekartetirol">eGrundkarte
+                    Tirol</a>
+            </nav>
+        </footer>
+    </main>
+</body>
+
+</html>
