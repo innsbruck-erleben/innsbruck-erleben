@@ -6,10 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <title>Bike Trail Tirol Beispiel</title>
+    <title>Weitwanderweg Innsbruck</title>
 
-    <!-- favicon -->
-    <link rel="shortcut icon" href="icons/start.png.png" type="image/x-icon">
+   
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -31,7 +30,7 @@
     <script src='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/Leaflet.fullscreen.min.js'></script>
     <link href='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/leaflet.fullscreen.css'
         rel='stylesheet' />
-        
+
     <!-- leaflet-elevation -->
     <link rel="stylesheet" href="https://unpkg.com/@raruto/leaflet-elevation/dist/leaflet-elevation.css" />
     <script src="https://unpkg.com/@raruto/leaflet-elevation/dist/leaflet-elevation.js"></script>
@@ -45,46 +44,88 @@
 <body>
     <main>
         <header>
-            <h2><i class="fa-solid fa-person-biking"></i> Bike Trail Tirol Beispiel</h2>
-            <nav>
-                <i class="fab fa-github"></i> <a href="https://github.com/webmapping/biketirol">Github</a>
-            </nav>
+            <!-- Bildquelle: https://pixabay.com/de/photos/innsbruck-seegrube-nordkette-tirol-3821933/-->
+            <img class="center" src="images/wanderweg_nordkette.jpg" alt="Wanderweg Nordkette">
+
+
+
+
         </header>
-        <article>
-            <h1><a href=""></a>Etappe 29: Landeck - Ischgl</h1>
-            <p>Diese anspruchsvolle Etappe bringt Sie von der historischen Alpenstadt Landeck durch das Paznauntal in
-                den actiongeladenen Ort Ischgl. 33 Kilometer und 1.250 zu überwindende Höhenmeter erfordern Können und
-                Kondition. Dafür erwarten Sie auf dieser Strecke interessante und abwechslungsreiche Trails.</p>
-            
-                <select name = "pulldown" id="pulldown">
-                </select>
+        <article class="shadow">
+            <h1><a href=""></a>Weitwanderweg Innsbruck</h1>
+            <p class="format">Der Innsbruck Trek ist ein sechs Etappen umfassender Wanderweg rund um die Tiroler
+                Landeshauptstadt Innsbruck. Die Highlights dieses Weitwanderweges sind der 2.828m hohe Pirchkogel in den
+                Stubaier Alpen. Den krönenden Abschluss bildet am letzen Tag die Besteigung des Patschkofels, der auch
+                als Hausberg Innsbrucks bekannt ist. </p>
+
             <div id="map"></div>
+
+            <h3 class="format">Höhenprofile zum Ausklappen</h3>
             <div id="profile"></div>
 
-            <h3>Streckenbeschreibung</h3>
-            <p>Vom Zentrum Landecks fährt man kurz auf der Hauptstraße Richtung Süden, ehe man auf der Holzbrücke den
-                Inn überquert. Hier folgt man den grünen Radwegweisern Richtung Zams, vorbei am Gerichtsgebäude bis man
-                bei einem gelben Wanderwegweiser links Richtung Zirmegg abzweigt. Nun folgt man einem asphaltierten
-                Zufahrtsweg aufwärts, bis man die Straße nach Tobadill erreicht. Auf dieser geht es weiter bergan nach
-                Tobadill (1 Stunde ab Landeck). Insgesamt radelt man weiterhin mehr ansteigend als abwärts bis in den
-                Weiler Hintergiggl. Dort verlässt man die Asphaltstraße und es geht auf einer Schiebestrecke
-                „Rundwanderweg See-Dorf“ auf einem Waldweg zum Weiler Frodenegg. Nun folgt man den gelben Schildern auf
-                der Zufahrtstraße bis nach See hinunter (1 Stunde 15 Minuten ab Tobadill). Im Dorf radelt man 400 Meter
-                auf der Talstraße einwärts, bis man rechts zum Parkplatz der Bergbahnen See abzweigt. Hier führt die
-                Strecke kurz talauswärts ansteigend auf der Bikeroute 743. Schon nach ein paar hundert Metern zweigt man
-                aber links in den Paznauner Talweg (Bikeroute 737) ab. Den meist gelben Hinweisschildern folgt man nun
-                am Sonnenhang bis Kappl (1,5 Stunden ab See). Weiter führt die Etappe am Sonnenhang entlang auf dem
-                Radweg Kappl-Ischgl (741) bis ins Zentrum von Ischgl (1 Stunde 15 Minuten ab Kappl).</p>
+            <h3 class="format">Streckenbeschreibung</h3>
+
+
+            <h4 class="format">Tag 1 Innsbruck - Kranebitten (5h, mittelschwierig)</h4>
+            <p class="format">Der Innsbruck Trek startet in der historischen Altstadt und führt dann am Alpenzoo hinauf
+                zur Hungerburg. Schon hier bietet sich eine wunderbare Weitsicht über Innsbruck und die angrenzende
+                Bergwelt. Die Etappe zieht sich weiter über die Gramartstraße und den Umbrüggler-Almweg zur
+                Umbrüggler-Alm. Hier bietet sich eine kurze Verschnaufpause an, bevor es weiter durch den Höttinger
+                Graben und über das Höttinger Bild zum Gasthof Rauschbrunnen geht. Auch hier bietet sich ein kurzer
+                Stopp an, um anschließend zum Kranebitter Bahnhof abzusteigen, wo die erste Tagesetappe endet. </p>
+
+            <h4 class="format">Tag 2 Obsteig -Wankspitze und retour (8h, schwierig)</h4>
+            <p class="format">Die nächste Etappe startet in Obsteig auf dem Mieminger Plateau. Der Weg führt vorbei am
+                Gasthaus Arzkasten und folgt dann dem Sturlbach Richtung Lehnberghaus. Nach einem kurzen, steilen
+                Anstieg wird das Lehnberghaus erreicht. Hier bietet sich eine Rast an. Dann führt der Weg weiter zur
+                Aussichtsplattform Lacke, die einen atemberaubenden Blick über das Inntal und die Gipfel des Kawendels
+                sowie der Stubaier Alpen bietet. Von der Plattform aus folgt man dem Pfad in nordöstlicher Richtung
+                hinauf auf die Wankspitze, die mit 2.209m Höhe ein weiteres Ausblickshighlight darstellt. Der Rückweg
+                erfolgt über den Aufstiegsweg hinab nach Obsteig, wo diese Tagesetappe endet. </p>
+
+            <h4 class="format">Tag 3 Sattele – Pirchkogel – Kühtai (7h, schwierig)</h4>
+            <p class="format"> Die Bushaltestelle Sattele oberhalb von Ochsengarten stellt den Ausgangspunkt der
+                nächsten Tagesetappe dar. Man folgt dem Pirchkogelweg zur Feldringalm, bei der eine Einkehr lohnt, bevor
+                der Weg durch die Feldringer Böden und am Grünwaslkreuz vorebi über einen schmalen Bergrücken zum Gipfel
+                des Pirchkogl führt. Der Pirchkogel stellt mit 2.828m Höhe den höchsten Punkt dieser sechstägigen
+                Wanderung dar. Der Abstieg ins Kühtai führt in östlicher Richtung vorbei an mehreren Bergseen und der
+                Bergstation der Kaiserbahn.</p>
+
+            <h4 class="format">Tag 4 St. Sigmund im Sellrain – Aigling (9,5h, schwierig)</h4>
+            <p class="format">Die vierte Tagesetappe startet in St. Sigmund im Sellrain und führt erst talaufwärts und
+                anschließend dem Wunderwanderweg folgend zur Sonnbergalm, die auf 1.950m zu einer Einkehr einlädt. Dann
+                folgt man dem Sellraintaler Höhenweg hinauf zum Rifflkreuz auf 2.232m Höhe, dem höchsten Punkt der
+                heutigen Etappe. Hier bietet sich ein toller Ausblick auf die Kalkkögel. Der Rückweg führt steil
+                talwärts nach St. Quirin und von da aus weiter nach Aigling, dem Endpunkt der Tagesetappe.</p>
+
+            <h4 class="format">Tag 5 Axamer Lizum – Birgitzköpfl – Mutters (6h, mittelschwierig)</h4>
+            <p class="format">Der heutige Startpunkt ist die Talstation der Axamer Lizum. Von dort führt der Weg über
+                Wiesen und durch waldiges Gebiet zum 1.992m hoch gelegenem Joch, von welchem man den Blick über die
+                Kalkkögel und ins Stubaital schweifen lassen kann. Vom Halsl aus folgt man dem Höhenwanderweg nach
+                Norden und erreicht das Birgitzköpflhaus, bei dem sich eine Einkehr lohnt. Gestärkt folgt man dem Weg
+                dann weiter in Richtung Pfriemsköpfl und weiter zur Mutterer Alm, die zur nächsten Pause einlädt. Der
+                Abstieg erfolgt anschließend hinab zur Hirschlacke und weiter talwärts ins Dorfzentrum von Mutters, das
+                den Endpunkt der fünften Tagesetappe darstellt. </p>
+
+            <h4 class="format">Tag 6 Bergstation Patscherkofelbahn – Viggarspitze und retour (5h, mittelschwierig)</h4>
+            <p class="format">Die letzte Etappe startet mit einer gemütlichen Gondelfahrt zur Bergstation der
+                Patscherkoflbahn. Von dort steigt man zum Gipfelhaus des Innsbrucker Hausberges auf. Hier lässt sich
+                eine erste Pause einlegen, bevor man dann auf dem Jochleitensteig zur Boscheben-Hütte gelangt, die zu
+                einer weiteren Einkehr mit toller Aussicht einlädt. Anschließend wandert man weiter auf dem Zirbenweg,
+                biegt dann aber auf einem Steig zur Viggarspitze ab. Der 2.306m hohe Gipfel bietet eine wunderbaren
+                Aussicht auf die Nordkette und die Stubaier Alpen. Der Rückweg erfolgt auf der gleichen Route. Zurück an
+                der Bergstation der Patscherkofelbahn endet die sechste und damit letzte Etappe dieser Wanderung. Eine
+                letzte Einkehrmöglichkeit bieten das Schutzhaus Patscherkofel oder das Bergrestaurant Das Kofel, bevor
+                man während der Talfahrt mit der Patscherkofelbahn ein letztes Mal die Bergwelt um Innsbruck bestaunen
+                kann. </p>
+
 
         </article>
         <footer>
             <strong>Datenquellen:</strong>
             <nav>
-                <a href="https://www.tirol.at/reisefuehrer/sport/mountainbiken/bike-trail-tirol">Bike Trail Tirol
-                    (Online Reiseführer Tirol)</a> |
-                <a
-                    href="https://www.tirol.at/reisefuehrer/sport/radfahren/biketouren/a-bike-trail-tirol-landeck-ischgl">Etappe
-                    29: Landeck - Ischgl</a>
+               
+                <a href="https://www.tirol.at/reisefuehrer/sport/wandern/wandertouren/a-innsbruck-trek">Weitwanderweg Innsbruck Trek</a>
                 <a href="https://www.data.gv.at/katalog/de/dataset/land-tirol_elektronischekartetirol">eGrundkarte
                     Tirol</a>
             </nav>

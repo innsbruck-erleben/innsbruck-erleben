@@ -1,4 +1,4 @@
-/* Bike Trail Tirol Beispiel */
+/* Innsbruck Trek Tirol Beispiel */
 
 // Innsbruck
 let ibk = {
@@ -8,21 +8,13 @@ let ibk = {
 
 // Karte initialisieren
 let map = L.map("map", {
-    fullscreenControl: true
-}).setView([ibk.lat, ibk.lng], 9);
+    fullscreenControl: true, minZoom: 8,
+}).setView([ibk.lat, ibk.lng], 10);
 
-// thematische Layer
-let themaLayer = {
-    route: L.featureGroup()
-}
 
 // WMTS Hintergrundlayer der eGrundkarte Tirol definieren
 let eGrundkarteTirol = {
     sommer: L.tileLayer("https://wmts.kartetirol.at/gdi_summer/{z}/{x}/{y}.png", {
-        attribution: `Datenquelle: <a href="https://www.data.gv.at/katalog/dataset/land-tirol_elektronischekartetirol">eGrundkarte Tirol</a>`
-    }),
-    winter: L.tileLayer(
-        "https://wmts.kartetirol.t/gdi_winter/{z}/{x}/{y}.png", {
         attribution: `Datenquelle: <a href="https://www.data.gv.at/katalog/dataset/land-tirol_elektronischekartetirol">eGrundkarte Tirol</a>`
     }),
     ortho: L.tileLayer("https://wmts.kartetirol.at/gdi_ortho/{z}/{x}/{y}.png", {
@@ -41,16 +33,12 @@ let layerControl = L.control.layers({
         eGrundkarteTirol.sommer,
         eGrundkarteTirol.nomenklatur
     ]).addTo(map),
-    "eGrundkarte Tirol Winter": L.layerGroup([
-        eGrundkarteTirol.winter,
-        eGrundkarteTirol.nomenklatur
-    ]),
     "eGrundkarte Tirol Orthofoto": L.layerGroup([
         eGrundkarteTirol.ortho,
         eGrundkarteTirol.nomenklatur,
     ])
 }, {
-    "Route der Etappe": themaLayer.route.addTo(map)
+   
 }).addTo(map);
 
 // Maßstab
@@ -59,29 +47,65 @@ L.control.scale({
 }).addTo(map);
 
 //GPX Track visualisieren
-let controlElevation = L.control.elevation({
+
+
+
+let controlElevation_T1 = L.control.elevation({
     time: false,
     elevationDiv: "#profile",
     height: 300,
-    theme: "bike-tirol"
+    theme: "lime-theme",
+    autofitBounds: false,
+    collapsed: true
 }).addTo(map);
-controlElevation.load("./data/etappe29.gpx");
+controlElevation_T1.load("./data/Tag 1_Innsbruck_Rauschbrunnen.gpx");
 
-//Pulldown für Navigation
-let pulldown = document.querySelector("#pulldown");
-for (let etappe of ETAPPEN) {
-    console.log(etappe);
-    let status = "";
-    if (etappe.nr == "29") {
-        status = "selected "
-    }
-    pulldown.innerHTML += `<option ${status} value="${etappe.user}">Etappe ${etappe.nr}: ${etappe.etappe}</option>`
-}
+let controlElevation_T2 = L.control.elevation({
+    time: false,
+    elevationDiv: "#profile",
+    height: 300,
+    theme: "lime-theme",
+    autofitBounds: false,
+    collapsed: true
+}).addTo(map);
+controlElevation_T2.load("./data/Tag 2_Wankspitze.gpx");
 
-//auf Änderung im Pulldown reagiere
-pulldown.onchange = function(evt) {
-    //console.log(pulldown.value);
-    let url = `https://${pulldown.value}.github.io/biketirol`;
-    //console.log(url);
-    window.location.href = url; 
-}
+let controlElevation_T3 = L.control.elevation({
+    time: false,
+    elevationDiv: "#profile",
+    height: 300,
+    theme: "lime-theme",
+    autofitBounds: false,
+    collapsed: true
+}).addTo(map);
+controlElevation_T3.load("./data/Tag 3_Pirchkogel.gpx");
+
+let controlElevation_T4 = L.control.elevation({
+    time: false,
+    elevationDiv: "#profile",
+    height: 300,
+    theme: "lime-theme",
+    autofitBounds: false,
+    collapsed: true
+}).addTo(map);
+controlElevation_T4.load("./data/Tag 4_Sellraintaler_Höhenwanderweg.gpx");
+
+let controlElevation_T5 = L.control.elevation({
+    time: false,
+    elevationDiv: "#profile",
+    height: 300,
+    theme: "lime-theme",
+    autofitBounds: false,
+    collapsed: true
+}).addTo(map);
+controlElevation_T5.load("./data/Tag 5_Birgitzköpfl.gpx");
+
+let controlElevation_T6 = L.control.elevation({
+    time: false,
+    elevationDiv: "#profile",
+    height: 300,
+    theme: "lime-theme",
+    autofitBounds: false,
+    collapsed: true
+}).addTo(map);
+controlElevation_T6.load("./data/Tag 6_Patscherkofel_Viggarspitze.gpx");
