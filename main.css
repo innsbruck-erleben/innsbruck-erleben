@@ -16,6 +16,7 @@ h1 {
     text-align: center;
 }
 
+
 .center {
     margin: 0 auto;
     display: block;
@@ -31,7 +32,7 @@ main {
 } /*Formatierung des Hauptteils, grauer Rahmen*/
 
 article {
-    padding: 1em;
+    padding: 5em;
 } /*bestimmt den Innenabstand eines Elements zu seinem Rahmen, Von  einem großen "M"*/
 
 
