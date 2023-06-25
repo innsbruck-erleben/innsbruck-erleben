@@ -20,8 +20,8 @@ let themaLayer = {
 // Hintergrundlayer
 let layerControl = L.control.layers({
   "BasemapAT Grau": L.tileLayer.provider("BasemapAT.grau"),
-  "BasemapAT Standard": L.tileLayer.provider("BasemapAT.basemap").addTo(map),
-  "BasemapAT Orthofoto": L.tileLayer.provider("BasemapAT.orthofoto"),
+  "BasemapAT Standard": L.tileLayer.provider("BasemapAT.basemap"),
+  "BasemapAT Orthofoto": L.tileLayer.provider("BasemapAT.orthofoto").addTo(map),
 }, {
 "ECMWF Windlayer": themaLayer.wind.addTo(map),
 "Temperatur": themaLayer.temperature.addTo(map),
