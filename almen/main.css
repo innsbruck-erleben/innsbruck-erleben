@@ -12,8 +12,11 @@ body {
 a {
     color: black;
 }
+header > img {
+    max-width: 100% ;
+}
 
-
+/* Zentrierung der Überschrift und des Titelbildes*/
 .center {
     margin: 0 auto;
     display: block;
@@ -22,8 +25,10 @@ h1 {
     text-align: center;
 }
 
-header > img {
-    object-position: mid ;
+/*Einrücken des Textes nach links und rechts um 3em*/
+.format {
+    padding-left: 3em;
+    padding-right: 3em;
 }
 
 main {
@@ -55,14 +60,14 @@ article h3 {
 
 
 #map { 
-    width: 100%;
+    width: 90%;
     height: 600px;
     border: 1px solid silver;
     margin: auto;
 } /*#maps der Hashtag ist eine ID*/
 
 main>img {
-    max-width: 90%;
+    max-width: 100%;
 }  /*erstes Bild im Header*/
 
 footer {

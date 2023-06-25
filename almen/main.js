@@ -1,4 +1,4 @@
-/* Almen rund um Innsbruck */
+/* Hütten rund um Innsbruck */
 
 // Koordinaten Innsbruck
 let innsbruck = {
@@ -9,7 +9,7 @@ let innsbruck = {
 // Karte initialisieren
 let map = L.map("map").setView([
     innsbruck.lat, innsbruck.lng
-], 12);
+], 11);
 
 map.addControl(new L.Control.Fullscreen({
     title: {
@@ -17,6 +17,9 @@ map.addControl(new L.Control.Fullscreen({
         'true': 'Exit Fullscreen'
     }
 }));
+
+// PlugIn Hash
+let hash = new L.Hash(map);
 
 //thematische Layer 
 let themaLayer = {
@@ -27,15 +30,14 @@ let themaLayer = {
 
 // Hintergrundlayer
 let layerControl = L.control.layers({
-    "BasemapAT Grau": L.tileLayer.provider("BasemapAT.grau").addTo(map),
-    "BasemapAT Standard": L.tileLayer.provider("BasemapAT.basemap"),
-    "BasemapAT High-DPI": L.tileLayer.provider("BasemapAT.highdpi"),
-    "BasemapAT Gelände": L.tileLayer.provider("BasemapAT.terrain"),
-    "BasemapAT Oberfläche": L.tileLayer.provider("BasemapAT.surface"),
-    "BasemapAT Orthofoto": L.tileLayer.provider("BasemapAT.orthofoto"),
-    "BasemapAT Beschriftung": L.tileLayer.provider("BasemapAT.overlay")
+    "BasemapAT Grau": L.tileLayer.provider("BasemapAT.grau", {minZoom: 11}),
+    "BasemapAT Standard": L.tileLayer.provider("BasemapAT.basemap", {minZoom: 11}).addTo(map),
+   // "BasemapAT High-DPI": L.tileLayer.provider("BasemapAT.highdpi", {minZoom: 11}),
+  //  "BasemapAT Gelände": L.tileLayer.provider("BasemapAT.terrain", {minZoom: 11}),
+    "BasemapAT Orthofoto": L.tileLayer.provider("BasemapAT.orthofoto", {minZoom: 11}),
+   // "BasemapAT Beschriftung": L.tileLayer.provider("BasemapAT.overlay", {minZoom: 11})
 }, {
-    "Almen": themaLayer.huetten.addTo(map),
+    "Hütten": themaLayer.huetten.addTo(map),
 }).addTo(map);
 
 // Maßstab
@@ -43,7 +45,7 @@ L.control.scale({
     imperial: false,
 }).addTo(map);
 
-//Almen
+//Hütten
 async function showHuetten (url) {
     let response = await fetch(url); //Anfrage, Antwort kommt zurück
     let jsondata = await response.json(); //json Daten aus Response entnehmen 
@@ -73,6 +75,6 @@ async function showHuetten (url) {
         }
     }).addTo(themaLayer.huetten); //alle Almen anzeigen als Marker
 }
+showHuetten ("huetten_json.geojson");
 
-//showAlmen ("https://data-tiris.opendata.arcgis.com/datasets/tiris::almzentren-1.geojson"); //aufrufen der Funktion 
-showHuetten ("huetten_json.json");
+
