@@ -85,7 +85,7 @@ L.control.rainviewer({
 }).addTo(map);
 
 function writeSBadeseenLayer(jsondata) {
-    // Wetterstationen bearbeiten
+    // Badeseen bearbeiten
     L.geoJSON(jsondata, {
         pointToLayer: function(feature, latlng) {
             return L.marker(latlng, {
@@ -107,12 +107,18 @@ function writeSBadeseenLayer(jsondata) {
                 <ul>
                 <li>Lufttemperatur (°C): ${prop.LT||"keine Angabe"}</li>
                 <li>Wassertemperatur (°C): ${prop.W||"keine Angabe"}</li>
-                <li>Wasserqualität: ${prop.A||+"keine Angabe"}</li>
-                <li>Schneehöhe (cm): ${prop.HS||"keine Angabe"}</li>
-                <li>Regen (mm/m²): ${prop.R||"keine Angabe"}</li>
+                <li>Wasserqualität: ${prop.A||"keine Angabe"}</li>
                 </ul>
-                <span>${pointInTime.toLocaleString()}</span> 
+                <span>${pointInTime.toLocaleString()}</span>
                 `);
             }
-        }).addTo(themaLayer.stations); //alle Wetterstationen anzeigen als Marker
+        }).addTo(themaLayer.badeseen); //alle Badeseen anzeigen als Marker
         }
+
+        async function loadBadeseen (url) {
+            let response = await fetch(url); //Anfrage, Antwort kommt zurück
+            let jsondata = await response.json(); //json Daten aus Response entnehmen
+            writeBadeseenLayer(jsondata);
+        }
+        
+        loadBadeseen(badeseen.json);
