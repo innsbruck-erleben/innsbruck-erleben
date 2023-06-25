@@ -45,7 +45,7 @@ async function loadWind(url) {
 
  L.velocityLayer({
     displayValues: true,
-    lineWidth: 3,
+    lineWidth: 5,
     displayOptions: {
       velocityType: "",
       position: "bottomright",

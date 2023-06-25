@@ -4,7 +4,7 @@
 body {
     font-family: 'Open Sans', sans-serif;
     background-color: #ffffff;
-    max-width: 1024px;
+    max-width: 1280px;
     margin: auto;
 } /*Schriftart, -größe, Hintergrundfarbe, Randbreite der Website*/
 
@@ -23,6 +23,11 @@ h1 {
     margin: 0 auto;
     display: block;
 }
+.format {
+    padding-left: 3em;
+    padding-right: 3em;
+}
+
 main {
     max-width: 1024px;
     margin: auto;
@@ -34,7 +39,7 @@ main {
 } /*Formatierung des Hauptteils, grauer Rahmen*/
 
 article {
-    padding: 5em;
+    padding: 1em;
 } /*bestimmt den Innenabstand eines Elements zu seinem Rahmen, Von  einem großen "M"*/
 
 
@@ -53,7 +58,7 @@ article h3 {
 
 
 #map { 
-    width: 400px;
+    width: 60%;
     height: 400px;
     border: 1px solid silver;
     margin: auto;
