@@ -1,0 +1,85 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "id": 0,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    11.448499000000027,
+                    47.266399000000035
+                ]
+            },
+            "properties": {
+                "FID": 0,
+                "ID": 1,
+                "NAME": "Badesee Rossau",
+                "LAT": 47.266399,
+                "LNG": 11.448499,
+                "WASSERTEMP": 21.899999999999999,
+                "WASSERQUAL": 1
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 1,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    11.417099000000064,
+                    47.240501000000052
+                ]
+            },
+            "properties": {
+                "FID": 1,
+                "ID": 2,
+                "NAME": "Lanser See",
+                "LAT": 47.240501000000002,
+                "LNG": 11.417099,
+                "WASSERTEMP": 20.800000000000001,
+                "WASSERQUAL": 1
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 2,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    11.341799000000037,
+                    47.237300000000062
+                ]
+            },
+            "properties": {
+                "FID": 2,
+                "ID": 3,
+                "NAME": "Natterer See",
+                "LAT": 47.237299999999998,
+                "LNG": 11.341799,
+                "WASSERTEMP": 19.399999999999999,
+                "WASSERQUAL": 1
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 3,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    11.191900000000032,
+                    47.322399000000075
+                ]
+            },
+            "properties": {
+                "FID": 3,
+                "ID": 4,
+                "NAME": "Wildsee",
+                "LAT": 47.322398999999997,
+                "LNG": 11.1919,
+                "WASSERTEMP": 15.6,
+                "WASSERQUAL": 1
+            }
+        }
+    ]
+}

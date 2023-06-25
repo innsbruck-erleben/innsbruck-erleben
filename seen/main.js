@@ -91,7 +91,7 @@ async function showBadeseen (url){
         pointToLayer: function (feature, latlng) {
             return L.marker (latlng, {
                 icon: L.icon({
-                    iconUrl: "icons/swim.png",
+                    iconUrl: "swim.png",
                     iconAnchor: [16, 37],
                     popupAnchor: [0, -37],
                 })
@@ -100,18 +100,16 @@ async function showBadeseen (url){
         onEachFeature: function (feature, layer) {
             let prop = feature.properties;
             layer.bindPopup (`
-            <h4>${prop.BADEGEWÄSSERNAME}</h4>
+            <h4>${prop.NAME}</h4>
                 <ul>
-                <li>Lufttemperatur (°C): ${prop.LT||"keine Angabe"}</li>
-                <li>Wassertemperatur (°C): ${prop.W||"keine Angabe"}</li>
-                <li>Wasserqualität: ${prop.A||"keine Angabe"}</li>
+                <li>Wassertemperatur in °C: ${prop.WASSERTEMP||"keine Angabe"}</li>
+                <li>Wasserqualität: ${prop.WASSERQUAL||"keine Angabe"}</li>
                 </ul>
-                <span>${pointInTime.toLocaleString()}</span>
             `);
         }
     }).addTo(themaLayer.badeseen);
 }
-showBadeseen ("badeseen.json");
+showBadeseen ("see.geoJson");
 
 
 /*function showBadeseen(jsondata) {
