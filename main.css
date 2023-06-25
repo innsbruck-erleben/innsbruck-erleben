@@ -9,7 +9,7 @@ body {
 } /*Schriftart, -größe, Hintergrundfarbe, Randbreite der Website*/
 
 header>img {
-    max-width: 90%;
+    max-width: 100%;
 }  /*erstes Bild im Header*/
 
 h1 {
