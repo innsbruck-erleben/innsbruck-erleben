@@ -4,8 +4,8 @@ let innsbruck = {
 };
 
 // Karte initialisieren
-let map = L.map ("map", {fullscreenControl: true
-}).setView([innsbruck.lat, innsbruck.lng], 12); 
+let map = L.map ("map", {fullscreenControl: true, minZoom: 8, maxZoom:10, 
+}).setView([innsbruck.lat, innsbruck.lng], 10); 
 
 
 let osm = L.tileLayer.provider('OpenStreetMap.Mapnik').addTo(map);
@@ -19,9 +19,9 @@ let themaLayer = {
 
 // Hintergrundlayer
 let layerControl = L.control.layers({
-  "BasemapAT Grau": L.tileLayer.provider("BasemapAT.grau", {minZoom: 11}),
-  "BasemapAT Standard": L.tileLayer.provider("BasemapAT.basemap", {minZoom: 11}).addTo(map),
-  "BasemapAT Orthofoto": L.tileLayer.provider("BasemapAT.orthofoto", {minZoom: 11}),
+  "BasemapAT Grau": L.tileLayer.provider("BasemapAT.grau"),
+  "BasemapAT Standard": L.tileLayer.provider("BasemapAT.basemap").addTo(map),
+  "BasemapAT Orthofoto": L.tileLayer.provider("BasemapAT.orthofoto"),
 }, {
 "ECMWF Windlayer": themaLayer.wind,
 "Hütten": themaLayer.huetten.addTo(map),
