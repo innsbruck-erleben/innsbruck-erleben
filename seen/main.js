@@ -38,6 +38,10 @@ L.control.scale({
     imperial: false,
 }).addTo(map);
 
+// PlugIn Hash
+let hash = new L.Hash(map);
+
+
 function getColor(value, ramp){
     for(let rule of ramp) {
         if(value >= rule.min && value < rule.max){
