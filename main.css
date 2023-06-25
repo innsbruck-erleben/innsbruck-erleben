@@ -16,7 +16,9 @@ h1 {
     text-align: center;
 }
 
-
+.links{
+    text-align: left;
+}
 .center {
     margin: 0 auto;
     display: block;
