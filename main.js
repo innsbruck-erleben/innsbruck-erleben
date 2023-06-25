@@ -4,7 +4,7 @@ let innsbruck = {
 };
 
 // Karte initialisieren
-let map = L.map ("map", {fullscreenControl: true, minZoom: 8, maxZoom:10, 
+let map = L.map ("map", {fullscreenControl: true, minZoom: 8, maxZoom:12, 
 }).setView([innsbruck.lat, innsbruck.lng], 10); 
 
 
