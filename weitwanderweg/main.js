@@ -52,8 +52,6 @@ let hash = new L.Hash(map);
 
 //GPX Track visualisieren
 
-
-
 let controlElevation_T1 = L.control.elevation({
     time: false,
     elevationDiv: "#profile",
