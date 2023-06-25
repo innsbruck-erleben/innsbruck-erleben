@@ -46,7 +46,7 @@ function getColor(value, ramp){
     }
 }
 
-function writeTemperatureLayer(jsondata){
+/*function writeTemperatureLayer(jsondata){
     L.geoJSON(jsondata,{
         filter: function(feature){
             if (feature.properties.LT > -50 && feature.properties.LT < 50) {
@@ -72,7 +72,7 @@ async function loadTemperature (url) {
 }
 
 loadTemperature("https://static.avalanche.report/weather_stations/stations.geojson");
-
+*/
 L.control.rainviewer({ 
     position: 'bottomleft',
     nextButtonText: '>',
@@ -84,7 +84,37 @@ L.control.rainviewer({
     opacity: 0.5
 }).addTo(map);
 
-function writeSBadeseenLayer(jsondata) {
+async function showBadeseen (url){
+    let response = await fetch (url);
+    let jsondata = await response.json ();
+    L.geoJSON(jsondata, {
+        pointToLayer: function (feature, latlng) {
+            return L.marker (latlng, {
+                icon: L.icon({
+                    iconUrl: "icons/swim.png",
+                    iconAnchor: [16, 37],
+                    popupAnchor: [0, -37],
+                })
+            });
+        },
+        onEachFeature: function (feature, layer) {
+            let prop = feature.properties;
+            layer.bindPopup (`
+            <h4>${prop.BADEGEWÄSSERNAME}</h4>
+                <ul>
+                <li>Lufttemperatur (°C): ${prop.LT||"keine Angabe"}</li>
+                <li>Wassertemperatur (°C): ${prop.W||"keine Angabe"}</li>
+                <li>Wasserqualität: ${prop.A||"keine Angabe"}</li>
+                </ul>
+                <span>${pointInTime.toLocaleString()}</span>
+            `);
+        }
+    }).addTo(themaLayer.badeseen);
+}
+showBadeseen ("badeseen.json");
+
+
+/*function showBadeseen(jsondata) {
     // Badeseen bearbeiten
     L.geoJSON(jsondata, {
         pointToLayer: function(feature, latlng) {
@@ -99,9 +129,6 @@ function writeSBadeseenLayer(jsondata) {
     
             onEachFeature: function (feature, layer) {
                 let prop = feature.properties; //Variable damit kürzer; * steht als Platzhalter für Bildunterschrift, Link für Infos, nur 1 Tab für Links
-                let höhenmeter = feature.geometry.coordinates;
-                let pointInTime = new Date(prop.date);
-                console.log(pointInTime);
                 layer.bindPopup(`      
                 <h4>${prop.BADEGEWÄSSERNAME}</h4>
                 <ul>
@@ -120,5 +147,6 @@ function writeSBadeseenLayer(jsondata) {
             let jsondata = await response.json(); //json Daten aus Response entnehmen
             writeBadeseenLayer(jsondata);
         }
+        showBadeseen ("badeseen.json");*/
+
         
-        loadBadeseen(badeseen.json);
