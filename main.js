@@ -14,7 +14,7 @@ let osm = L.tileLayer.provider('OpenStreetMap.Mapnik').addTo(map);
 // thematische Layer
 let themaLayer = {
     wind: L.featureGroup(),
-    huetten: L.markerClusterGroup({disableClusteringAtZoom: 17}),
+    temperature: L.featureGroup(),
 }
 
 // Hintergrundlayer
@@ -23,14 +23,18 @@ let layerControl = L.control.layers({
   "BasemapAT Standard": L.tileLayer.provider("BasemapAT.basemap", {minZoom: 11}).addTo(map),
   "BasemapAT Orthofoto": L.tileLayer.provider("BasemapAT.orthofoto", {minZoom: 11}),
 }, {
-"ECMWF Windlayer": themaLayer.wind,
-"Hütten": themaLayer.huetten.addTo(map),
+"ECMWF Windlayer": themaLayer.wind.addTo(map),
+"Temperatur": themaLayer.temperature.addTo(map),
 }).addTo(map);
+
+
+
 
 //Maßstab
 L.control.scale ({
    imperial:false, 
 }).addTo(map);
+
 
 
 // Winddaten laden
@@ -67,23 +71,38 @@ async function loadWind(url) {
     opacity: 0.5
 }).addTo(map);
 
+function getColor(value, ramp) { //value = temperatur, ramp= Colorramp
+  for(let rule of ramp){ //rule wird dann überprüft ob sie zwischen min und max ist
+         if (value >= rule.min && value < rule.max){
+             return rule.color;
+         }
+     }
+ }
 
-//Hütten
-async function showHuetten(url) {
-  let response = await fetch(url); //Anfrage, Antwort kommt zurück
-  let jsondata = await response.json(); //json Daten aus Response entnehmen 
-  L.geoJSON(jsondata, {
+//Temperatur
+function writeTemperatureLayer(jsondata){
+  L.geoJSON(jsondata,{
+      filter: function(feature){
+          if (feature.properties.LT > -50 && feature.properties.LT < 50) {
+              return true;
+          }
+      },
       pointToLayer: function(feature, latlng) {
-          //console.log(feature.properties)
+          let color = getColor(feature.properties.LT, COLORS.temperature);
           return L.marker(latlng, {
-              icon: L.icon({
-                  iconUrl: "almen/icons/alm.png",
-                  iconAnchor: [16, 37],
-                  popupAnchor: [0, -37],
+              icon: L.divIcon({
+                  className: "aws-div-icon",
+                  html: `<span style="background-color:${color}">${feature.properties.LT.toFixed(1)}</span>`
               })
           });
       },
-      }
-  ).addTo(themaLayer.huetten); //alle Busstopps anzeigen als Marker
+  }).addTo(themaLayer.temperature);
 }
-showHuetten ("almen/huetten_json.geojson"); //aufrufen der Funktion 
+
+async function loadTemperature (url) {
+  let response = await fetch(url); //Anfrage, Antwort kommt zurück
+  let jsondata = await response.json(); //json Daten aus Response entnehmen
+  writeTemperatureLayer(jsondata);
+}
+
+loadTemperature("https://static.avalanche.report/weather_stations/stations.geojson");

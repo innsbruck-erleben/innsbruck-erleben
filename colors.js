@@ -1,7 +1,7 @@
-const COLORS ={
-    temperature: [
+const COLORS = {
+    temperatur: [
         {
-            min: -50,
+            min: -99,
             max: -25,
             color: "#9f80ff",
         },
@@ -48,85 +48,119 @@ const COLORS ={
         {
             min: 15,
             max: 20,
+            color: "#ffbe7d",
+        },
+        {
+            min: 20,
+            max: 25,
             color: "#ff9b41",
         },
         {
-            min: 20,
-            max: 25,
+            min: 25,
+            max: 30,
             color: "#ff5a41",
         },
-    ],
-    windspeed: [
         {
-            min: 0,
-            max: 5,
-            color: "#ffff64",
-        },
-        {
-            min: 5,
-            max: 10,
-            color: "#c8ff64",
-        },
-        {
-            min:10,
-            max: 20,
-            color: "#96ff96",
-        },
-        {
-            min: 20,
-            max: 40,
-            color: "#32c8ff",
-        },        {
-            min: 40,
-            max: 60,
-            color: "#6496ff",
-        },        {
-            min: 60,
-            max: 80,
-            color: "#9664ff",
-        },        {
-            min: 80,
-            max: 1000,
-            color: "#ff3232",
-        },
-    ],
-    snowheight: [
-        {
-            min: 1,
-            max: 10,
-            color: "#ffffb2",
-        },
-        {
-            min: 10,
-            max: 25,
-            color: "#b0ffbc",
-        },
-        {
-            min:25,
+            min: 30,
             max: 50,
-            color: "#8cffff",
+            color: "#fa3c96",
         },
-        {
-            min: 50,
-            max: 100,
-            color: "#19cdff",
-        },        {
-            min: 100,
-            max: 200,
-            color: "#1982ff",
-        },        {
-            min: 200,
-            max: 300,
-            color: "#0f5abe",
-        },        {
-            min: 300,
-            max: 400,
-            color: "#784bff",
-        },  {
-            min: 400,
-            max: 10000,
-            color: "#cd0feb",
-        },   
-    ]
 
+    ],
+    snowhights: [
+    {
+        min: 1,
+        max: 10,
+        color: "#ffffb2",
+    },
+
+    {
+        min: 10,
+        max: 25,
+        color: "#b0ffbc",
+
+    },
+    {
+        min: 25,
+        max: 50,
+        color: "#8cffff",
+
+    },
+    {
+        min: 50,
+        max: 100,
+        color: "#19cdff",
+
+    },
+    {
+        min: 100,
+        max: 200,
+        color: "#1982ff",
+
+    },
+    {
+        min: 200,
+        max: 300,
+        color: "#0f5abe",
+
+    },
+    {
+        min: 300,
+        max: 400,
+        color: "#784bf",
+
+    },
+    {
+        min: 400,
+        max: 1000,
+        color: "#cd0feb",
+
+    },
+    
+],
+wind: [
+    {
+        min: 0,
+        max: 5,
+        color: "#ffff64",
+    },
+
+    {
+        min: 5,
+        max: 10,
+        color: "#c8ff64",
+
+    },
+    {
+        min: 10,
+        max: 20,
+        color: "#96ff96",
+
+    },
+    {
+        min: 20,
+        max: 40,
+        color: "#32c8ff",
+
+    },
+    {
+        min: 40,
+        max: 60,
+        color: "#6496ff",
+
+    },
+    {
+        min: 60,
+        max: 80,
+        color: "#9664ff",
+
+    },
+    {
+        min: 80,
+        max: 300,
+        color: "#ff3232",
+
+    },
+    
+]
 }
