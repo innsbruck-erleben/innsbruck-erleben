@@ -84,13 +84,13 @@ L.control.rainviewer({
     opacity: 0.5
 }).addTo(map);
 
-function writeStationLayer(jsondata) {
+function writeSBadeseenLayer(jsondata) {
     // Wetterstationen bearbeiten
     L.geoJSON(jsondata, {
         pointToLayer: function(feature, latlng) {
             return L.marker(latlng, {
                 icon: L.icon({
-                    iconUrl: `icons/wifi.png`,
+                    iconUrl: `icon\swim.png`,
                     iconAnchor: [16, 37],
                     popupAnchor: [0, -37],
                 })
@@ -103,11 +103,11 @@ function writeStationLayer(jsondata) {
                 let pointInTime = new Date(prop.date);
                 console.log(pointInTime);
                 layer.bindPopup(`      
-                <h4>${prop.name} ${höhenmeter[2]} m ü NN</h4>
+                <h4>${prop.BADEGEWÄSSERNAME}</h4>
                 <ul>
                 <li>Lufttemperatur (°C): ${prop.LT||"keine Angabe"}</li>
-                <li>Relative Luftfeuchte (%): ${prop.RH||"keine Angabe"}</li>
-                <li>Windgeschwindigkeit (km/h): ${prop.WG ? (prop.WG*3.6).toFixed(1) : "keine Angabe"}</li>
+                <li>Wassertemperatur (°C): ${prop.W||"keine Angabe"}</li>
+                <li>Wasserqualität: ${prop.A||+"keine Angabe"}</li>
                 <li>Schneehöhe (cm): ${prop.HS||"keine Angabe"}</li>
                 <li>Regen (mm/m²): ${prop.R||"keine Angabe"}</li>
                 </ul>
