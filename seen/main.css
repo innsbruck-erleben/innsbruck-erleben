@@ -26,6 +26,11 @@ h1 {
     padding-right: 3em;
 }
 
+.format2 {
+    padding-left: 3em;
+    padding-right: 3em;
+}
+
 main {
     max-width: 1024px;
     margin: auto;
