@@ -80,29 +80,32 @@ function getColor(value, ramp) { //value = temperatur, ramp= Colorramp
  }
 
 //Temperatur
-function writeTemperatureLayer(jsondata){
-  L.geoJSON(jsondata,{
-      filter: function(feature){
-          if (feature.properties.LT > -50 && feature.properties.LT < 50) {
+function writeTemperatureLayer (jsondata){
+  L.geoJSON(jsondata, {
+      filter: function (feature){
+          if (feature.properties.LT > -50 && feature.properties.LT <50){
               return true;
+
           }
       },
-      pointToLayer: function(feature, latlng) {
-          let color = getColor(feature.properties.LT, COLORS.temperature);
-          return L.marker(latlng, {
+      pointToLayer: function (feature, latlng){
+          let color = getColor (feature.properties.LT, COLORS.temperatur); //Variable definieren mit zwei werten: da wo wir die werte herbekommen (LT) und wo wir die Farben finden
+          return L.marker (latlng, {
               icon: L.divIcon({
                   className: "aws-div-icon",
-                  html: `<span style="background-color:${color}">${feature.properties.LT.toFixed(1)}</span>`
-              })
+               html: `<span style= "background-color:${color}">${feature.properties.LT.toFixed(1)}</span>`  
+              }),
           });
       },
   }).addTo(themaLayer.temperature);
 }
 
-async function loadTemperature (url) {
-  let response = await fetch(url); //Anfrage, Antwort kommt zurück
-  let jsondata = await response.json(); //json Daten aus Response entnehmen
-  writeTemperatureLayer(jsondata);
-}
 
-loadTemperature("https://static.avalanche.report/weather_stations/stations.geojson");
+
+async function loadStations(url) {
+  let response = await fetch(url);
+  let jsondata = await response.json();
+  writeTemperatureLayer (jsondata);
+
+}
+loadStations("https://static.avalanche.report/weather_stations/stations.geojson");
