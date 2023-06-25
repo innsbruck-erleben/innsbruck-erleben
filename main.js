@@ -5,7 +5,7 @@ let innsbruck = {
 
 // Karte initialisieren
 let map = L.map ("map", {fullscreenControl: true
-}).setView([innsbruck.lat, innsbruck.lng], 12);
+}).setView([innsbruck.lat, innsbruck.lng], 12); 
 
 
 let osm = L.tileLayer.provider('OpenStreetMap.Mapnik').addTo(map);
