@@ -32,10 +32,7 @@ let themaLayer = {
 let layerControl = L.control.layers({
     "BasemapAT Grau": L.tileLayer.provider("BasemapAT.grau", {minZoom: 11}),
     "BasemapAT Standard": L.tileLayer.provider("BasemapAT.basemap", {minZoom: 11}).addTo(map),
-   // "BasemapAT High-DPI": L.tileLayer.provider("BasemapAT.highdpi", {minZoom: 11}),
-  //  "BasemapAT Gelände": L.tileLayer.provider("BasemapAT.terrain", {minZoom: 11}),
     "BasemapAT Orthofoto": L.tileLayer.provider("BasemapAT.orthofoto", {minZoom: 11}),
-   // "BasemapAT Beschriftung": L.tileLayer.provider("BasemapAT.overlay", {minZoom: 11})
 }, {
     "Hütten": themaLayer.huetten.addTo(map),
 }).addTo(map);
