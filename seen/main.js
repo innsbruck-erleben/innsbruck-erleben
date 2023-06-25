@@ -19,13 +19,9 @@ let themaLayer = {
 
 // Hintergrundlayer
 let layerControl = L.control.layers({
-    "Relief avalanche.report": L.tileLayer(
-        "https://static.avalanche.report/tms/{z}/{x}/{y}.webp", {
-        attribution: `© <a href="https://lawinen.report">CC BY avalanche.report</a>`, minZoom: 11,
-    }).addTo(map),
-    "Openstreetmap": L.tileLayer.provider("OpenStreetMap.Mapnik"),
-    "Esri WorldTopoMap": L.tileLayer.provider("Esri.WorldTopoMap"),
-    "Esri WorldImagery": L.tileLayer.provider("Esri.WorldImagery")
+    "BasemapAT Grau": L.tileLayer.provider("BasemapAT.grau", {minZoom: 11}),
+    "BasemapAT Standard": L.tileLayer.provider("BasemapAT.basemap", {minZoom: 11}).addTo(map),
+    "BasemapAT Orthofoto": L.tileLayer.provider("BasemapAT.orthofoto", {minZoom: 11}),
 }, {
     "Badeseen": themaLayer.badeseen.addTo(map),
     "Temperatur": themaLayer.temperature,

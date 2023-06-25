@@ -19,9 +19,9 @@ let themaLayer = {
 
 // Hintergrundlayer
 let layerControl = L.control.layers({
-    "Openstreetmap": L.tileLayer.provider("OpenStreetMap.Mapnik"),
-    "Esri WorldTopoMap": L.tileLayer.provider("Esri.WorldTopoMap"),
-    "Esri WorldImagery": L.tileLayer.provider("Esri.WorldImagery").addTo(map)
+  "BasemapAT Grau": L.tileLayer.provider("BasemapAT.grau", {minZoom: 11}),
+  "BasemapAT Standard": L.tileLayer.provider("BasemapAT.basemap", {minZoom: 11}).addTo(map),
+  "BasemapAT Orthofoto": L.tileLayer.provider("BasemapAT.orthofoto", {minZoom: 11}),
 }, {
 "ECMWF Windlayer": themaLayer.wind,
 "Hütten": themaLayer.huetten.addTo(map),
@@ -74,7 +74,7 @@ async function showHuetten(url) {
   let jsondata = await response.json(); //json Daten aus Response entnehmen 
   L.geoJSON(jsondata, {
       pointToLayer: function(feature, latlng) {
-          console.log(feature.properties)
+          //console.log(feature.properties)
           return L.marker(latlng, {
               icon: L.icon({
                   iconUrl: "almen/icons/alm.png",
