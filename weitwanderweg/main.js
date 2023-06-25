@@ -46,6 +46,10 @@ L.control.scale({
     imperial: false,
 }).addTo(map);
 
+// PlugIn Hash
+let hash = new L.Hash(map);
+
+
 //GPX Track visualisieren
 
 
