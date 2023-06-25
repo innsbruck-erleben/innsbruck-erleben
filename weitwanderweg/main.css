@@ -51,7 +51,9 @@ article {
     article h3 {
         font-family: 'Montserrat', sans-serif;
     }   
-
+.links{
+        text-align: left;
+    }
 
 #map { 
     width: 90%;
