@@ -1,3 +1,10 @@
+
+
+
+
+
+
+
 /* Hütten rund um Innsbruck */
 
 // Koordinaten Innsbruck
