@@ -14,7 +14,7 @@ let map = L.map("map", {
 // thematische Layer
 let themaLayer = {
     badeseen: L.featureGroup(),
-    temperature: L.featureGroup(),
+    //temperature: L.featureGroup(),
 }
 
 // Hintergrundlayer
@@ -24,7 +24,7 @@ let layerControl = L.control.layers({
     "BasemapAT Orthofoto": L.tileLayer.provider("BasemapAT.orthofoto", {minZoom: 11}),
 }, {
     "Badeseen": themaLayer.badeseen.addTo(map),
-    "Temperatur": themaLayer.temperature,
+    //"Temperatur": themaLayer.temperature,
 }).addTo(map);
 
 layerControl.expand(); //Layer immer offen, muss nicht mehr mit einem Klick geöffnet werden
