@@ -1,1 +1,365 @@
-{"type":"FeatureCollection","features":[{"type":"Feature","id":1,"geometry":{"type":"Point","coordinates":[11.296550926000066,47.289120000000025]},"properties":{"OBJECTID":1,"ID":1,"NAME":"Neue Magdeburger Hütte","LAT":47.289119999999997,"LNG":11.296550925925899,"SEEHOEHE":1633,"HOMEPAGE":"http://www.magdeburger-huette.at/","OFFEN":"Mitte Mai bis Mitte Oktober","BETREIBER":"DAV Geltendorf","UEBERNACHTUNG":"Ja","F10":null}},{"type":"Feature","id":2,"geometry":{"type":"Point","coordinates":[11.288710000000037,47.310200000000066]},"properties":{"OBJECTID":2,"ID":2,"NAME":"Solstein Haus","LAT":47.310200000000002,"LNG":11.28871,"SEEHOEHE":1805,"HOMEPAGE":"http://www.solsteinhaus.com/","OFFEN":"Mitte Mai bis Mitte Oktober","BETREIBER":"ÖAV Innsbruck","UEBERNACHTUNG":"Ja","F10":null}},{"type":"Feature","id":3,"geometry":{"type":"Point","coordinates":[11.366800000000069,47.298840000000041]},"properties":{"OBJECTID":3,"ID":3,"NAME":"Höttinger Alm","LAT":47.298839999999998,"LNG":11.3668,"SEEHOEHE":1491,"HOMEPAGE":"https://hoettingeralm.at/","OFFEN":"Anfang Mai bis Mitte November","BETREIBER":"Privat","UEBERNACHTUNG":"nein","F10":null}},{"type":"Feature","id":4,"geometry":{"type":"Point","coordinates":[11.425540000000069,47.330080000000066]},"properties":{"OBJECTID":4,"ID":4,"NAME":"Pfeis Hütte","LAT":47.330080000000002,"LNG":11.42554,"SEEHOEHE":1922,"HOMEPAGE":"https://www.pfeishuette.at/","OFFEN":"Mitte Juni bis Mitte Oktober","BETREIBER":"ÖAV Innsbruck","UEBERNACHTUNG":"ja","F10":null}},{"type":"Feature","id":5,"geometry":{"type":"Point","coordinates":[11.452160000000049,47.210630000000037]},"properties":{"OBJECTID":5,"ID":5,"NAME":"Patscherkofel Schutzhaus","LAT":47.210630000000002,"LNG":11.452159999999999,"SEEHOEHE":1960,"HOMEPAGE":"https://schutzhaus-patscherkofel.at/","OFFEN":"NA","BETREIBER":"ÖAV Touristenclub Innsbruck","UEBERNACHTUNG":"ja","F10":null}},{"type":"Feature","id":6,"geometry":{"type":"Point","coordinates":[11.488550000000032,47.208540000000028]},"properties":{"OBJECTID":6,"ID":6,"NAME":"Meißner Haus","LAT":47.208539999999999,"LNG":11.48855,"SEEHOEHE":1720,"HOMEPAGE":"https://www.meissner-haus.at/","OFFEN":"Ende Mai bis Ende Oktober, Ende Dezember bis April","BETREIBER":"DAV Ebersberg-Grafing","UEBERNACHTUNG":"ja","F10":null}},{"type":"Feature","id":7,"geometry":{"type":"Point","coordinates":[11.526870000000031,47.209970000000055]},"properties":{"OBJECTID":7,"ID":7,"NAME":"Glungezer Hütte","LAT":47.209969999999998,"LNG":11.526870000000001,"SEEHOEHE":2610,"HOMEPAGE":"https://www.glungezer-huette.at/","OFFEN":"Juni bis Oktober, Dezember bis April","BETREIBER":"OAV Hall in Tirol","UEBERNACHTUNG":"ja","F10":null}},{"type":"Feature","id":8,"geometry":{"type":"Point","coordinates":[11.316180000000031,47.195200000000057]},"properties":{"OBJECTID":8,"ID":8,"NAME":"Birgitzköpflhaus","LAT":47.1952,"LNG":11.316179999999999,"SEEHOEHE":2035,"HOMEPAGE":"https://birgitzkoepflhuette.naturfreunde.at/","OFFEN":"Anfang April bis Mitte Oktober","BETREIBER":"Naturfreunde Österreich","UEBERNACHTUNG":"ja","F10":null}},{"type":"Feature","id":9,"geometry":{"type":"Point","coordinates":[11.507630000000063,47.228760000000079]},"properties":{"OBJECTID":9,"ID":9,"NAME":"Bettelwurfhütte","LAT":47.228760000000001,"LNG":11.507630000000001,"SEEHOEHE":2077,"HOMEPAGE":"http://www.bettelwurfhuette.at/","OFFEN":"Mitte Mai bis Mitte Oktober","BETREIBER":"ÖAV Innsbruck","UEBERNACHTUNG":"ja","F10":null}},{"type":"Feature","id":10,"geometry":{"type":"Point","coordinates":[11.477180000000033,47.354900000000043]},"properties":{"OBJECTID":10,"ID":10,"NAME":"Hallerangerhaus","LAT":47.354900000000001,"LNG":11.477180000000001,"SEEHOEHE":1768,"HOMEPAGE":"http://www.hallerangerhaus.at/","OFFEN":"Juni bis Oktober, Dezember bis April","BETREIBER":"DAV Schwaben","UEBERNACHTUNG":"ja","F10":null}},{"type":"Feature","id":11,"geometry":{"type":"Point","coordinates":[11.403220000000033,47.296730000000025]},"properties":{"OBJECTID":11,"ID":11,"NAME":"Arzler Alm","LAT":47.296729999999997,"LNG":11.403219999999999,"SEEHOEHE":1067,"HOMEPAGE":"https://arzleralm.at/","OFFEN":"Anfang April bis Mitte November","BETREIBER":null,"UEBERNACHTUNG":"nein","F10":null}},{"type":"Feature","id":12,"geometry":{"type":"Point","coordinates":[11.347270000000037,47.279140000000041]},"properties":{"OBJECTID":12,"ID":12,"NAME":"Rauschbrunnen","LAT":47.279139999999998,"LNG":11.34727,"SEEHOEHE":1060,"HOMEPAGE":"http://www.rauschbrunnen.at/","OFFEN":"April bis Oktober","BETREIBER":"Privat","UEBERNACHTUNG":"nein","F10":null}},{"type":"Feature","id":13,"geometry":{"type":"Point","coordinates":[11.37952000000007,47.306520000000035]},"properties":{"OBJECTID":13,"ID":13,"NAME":"Restaurant Seegrube","LAT":47.306519999999999,"LNG":11.379519999999999,"SEEHOEHE":1905,"HOMEPAGE":"https://seegrube.at/","OFFEN":"ganzjährlich","BETREIBER":"Privat","UEBERNACHTUNG":"nein","F10":null}},{"type":"Feature","id":14,"geometry":{"type":"Point","coordinates":[11.451670000000036,47.313900000000046]},"properties":{"OBJECTID":14,"ID":14,"NAME":"Thaurer Alm","LAT":47.313899999999997,"LNG":11.45167,"SEEHOEHE":1464,"HOMEPAGE":"https://thaureralm.at/","OFFEN":"Anfang Mai bis Ende Oktober","BETREIBER":"Privat","UEBERNACHTUNG":"nein","F10":null}},{"type":"Feature","id":15,"geometry":{"type":"Point","coordinates":[11.387830000000065,47.303400000000067]},"properties":{"OBJECTID":15,"ID":15,"NAME":"Bodenstein Alm","LAT":47.303400000000003,"LNG":11.387829999999999,"SEEHOEHE":1661,"HOMEPAGE":"https://www.innsbruck.info/sehen-und-erleben/essen-und-trinken/restaurantsuche/detail/infrastruktur/bodenstein-alm-innsbruck.html","OFFEN":"NA","BETREIBER":"Privat","UEBERNACHTUNG":"nein","F10":null}}]}
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "id": 1,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    11.296550926000066,
+                    47.289120000000025
+                ]
+            },
+            "properties": {
+                "OBJECTID": 1,
+                "ID": 1,
+                "NAME": "Neue Magdeburger Hütte",
+                "LAT": 47.289119999999997,
+                "LNG": 11.296550925925899,
+                "SEEHOEHE": 1633,
+                "HOMEPAGE": "http://www.magdeburger-huette.at/",
+                "OFFEN": "Mitte Mai bis Mitte Oktober",
+                "BETREIBER": "DAV Geltendorf",
+                "UEBERNACHTUNG": "Ja",
+                "F10": null
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 2,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    11.288710000000037,
+                    47.310200000000066
+                ]
+            },
+            "properties": {
+                "OBJECTID": 2,
+                "ID": 2,
+                "NAME": "Solstein Haus",
+                "LAT": 47.310200000000002,
+                "LNG": 11.28871,
+                "SEEHOEHE": 1805,
+                "HOMEPAGE": "http://www.solsteinhaus.com/",
+                "OFFEN": "Mitte Mai bis Mitte Oktober",
+                "BETREIBER": "ÖAV Innsbruck",
+                "UEBERNACHTUNG": "Ja",
+                "F10": null
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 3,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    11.366800000000069,
+                    47.298840000000041
+                ]
+            },
+            "properties": {
+                "OBJECTID": 3,
+                "ID": 3,
+                "NAME": "Höttinger Alm",
+                "LAT": 47.298839999999998,
+                "LNG": 11.3668,
+                "SEEHOEHE": 1491,
+                "HOMEPAGE": "https://hoettingeralm.at/",
+                "OFFEN": "Anfang Mai bis Mitte November",
+                "BETREIBER": "Privat",
+                "UEBERNACHTUNG": "nein",
+                "F10": null
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 4,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    11.425540000000069,
+                    47.330080000000066
+                ]
+            },
+            "properties": {
+                "OBJECTID": 4,
+                "ID": 4,
+                "NAME": "Pfeis Hütte",
+                "LAT": 47.330080000000002,
+                "LNG": 11.42554,
+                "SEEHOEHE": 1922,
+                "HOMEPAGE": "https://www.pfeishuette.at/",
+                "OFFEN": "Mitte Juni bis Mitte Oktober",
+                "BETREIBER": "ÖAV Innsbruck",
+                "UEBERNACHTUNG": "ja",
+                "F10": null
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 5,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    11.452160000000049,
+                    47.210630000000037
+                ]
+            },
+            "properties": {
+                "OBJECTID": 5,
+                "ID": 5,
+                "NAME": "Patscherkofel Schutzhaus",
+                "LAT": 47.210630000000002,
+                "LNG": 11.452159999999999,
+                "SEEHOEHE": 1960,
+                "HOMEPAGE": "https://schutzhaus-patscherkofel.at/",
+                "OFFEN": "NA",
+                "BETREIBER": "ÖAV Touristenclub Innsbruck",
+                "UEBERNACHTUNG": "ja",
+                "F10": null
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 6,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    11.488550000000032,
+                    47.208540000000028
+                ]
+            },
+            "properties": {
+                "OBJECTID": 6,
+                "ID": 6,
+                "NAME": "Meißner Haus",
+                "LAT": 47.208539999999999,
+                "LNG": 11.48855,
+                "SEEHOEHE": 1720,
+                "HOMEPAGE": "https://www.meissner-haus.at/",
+                "OFFEN": "Ende Mai bis Ende Oktober, Ende Dezember bis April",
+                "BETREIBER": "DAV Ebersberg-Grafing",
+                "UEBERNACHTUNG": "ja",
+                "F10": null
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 7,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    11.526870000000031,
+                    47.209970000000055
+                ]
+            },
+            "properties": {
+                "OBJECTID": 7,
+                "ID": 7,
+                "NAME": "Glungezer Hütte",
+                "LAT": 47.209969999999998,
+                "LNG": 11.526870000000001,
+                "SEEHOEHE": 2610,
+                "HOMEPAGE": "https://www.glungezer-huette.at/",
+                "OFFEN": "Juni bis Oktober, Dezember bis April",
+                "BETREIBER": "OAV Hall in Tirol",
+                "UEBERNACHTUNG": "ja",
+                "F10": null
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 8,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    11.316180000000031,
+                    47.195200000000057
+                ]
+            },
+            "properties": {
+                "OBJECTID": 8,
+                "ID": 8,
+                "NAME": "Birgitzköpflhaus",
+                "LAT": 47.1952,
+                "LNG": 11.316179999999999,
+                "SEEHOEHE": 2035,
+                "HOMEPAGE": "https://birgitzkoepflhuette.naturfreunde.at/",
+                "OFFEN": "Anfang April bis Mitte Oktober",
+                "BETREIBER": "Naturfreunde Österreich",
+                "UEBERNACHTUNG": "ja",
+                "F10": null
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 9,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    11.507630000000063,
+                    47.228760000000079
+                ]
+            },
+            "properties": {
+                "OBJECTID": 9,
+                "ID": 9,
+                "NAME": "Bettelwurfhütte",
+                "LAT": 47.228760000000001,
+                "LNG": 11.507630000000001,
+                "SEEHOEHE": 2077,
+                "HOMEPAGE": "http://www.bettelwurfhuette.at/",
+                "OFFEN": "Mitte Mai bis Mitte Oktober",
+                "BETREIBER": "ÖAV Innsbruck",
+                "UEBERNACHTUNG": "ja",
+                "F10": null
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 10,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    11.477180000000033,
+                    47.354900000000043
+                ]
+            },
+            "properties": {
+                "OBJECTID": 10,
+                "ID": 10,
+                "NAME": "Hallerangerhaus",
+                "LAT": 47.354900000000001,
+                "LNG": 11.477180000000001,
+                "SEEHOEHE": 1768,
+                "HOMEPAGE": "http://www.hallerangerhaus.at/",
+                "OFFEN": "Juni bis Oktober, Dezember bis April",
+                "BETREIBER": "DAV Schwaben",
+                "UEBERNACHTUNG": "ja",
+                "F10": null
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 11,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    11.403220000000033,
+                    47.296730000000025
+                ]
+            },
+            "properties": {
+                "OBJECTID": 11,
+                "ID": 11,
+                "NAME": "Arzler Alm",
+                "LAT": 47.296729999999997,
+                "LNG": 11.403219999999999,
+                "SEEHOEHE": 1067,
+                "HOMEPAGE": "https://arzleralm.at/",
+                "OFFEN": "Anfang April bis Mitte November",
+                "BETREIBER": "Privat",
+                "UEBERNACHTUNG": "nein",
+                "F10": null
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 12,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    11.347270000000037,
+                    47.279140000000041
+                ]
+            },
+            "properties": {
+                "OBJECTID": 12,
+                "ID": 12,
+                "NAME": "Rauschbrunnen",
+                "LAT": 47.279139999999998,
+                "LNG": 11.34727,
+                "SEEHOEHE": 1060,
+                "HOMEPAGE": "http://www.rauschbrunnen.at/",
+                "OFFEN": "April bis Oktober",
+                "BETREIBER": "Privat",
+                "UEBERNACHTUNG": "nein",
+                "F10": null
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 13,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    11.37952000000007,
+                    47.306520000000035
+                ]
+            },
+            "properties": {
+                "OBJECTID": 13,
+                "ID": 13,
+                "NAME": "Restaurant Seegrube",
+                "LAT": 47.306519999999999,
+                "LNG": 11.379519999999999,
+                "SEEHOEHE": 1905,
+                "HOMEPAGE": "https://seegrube.at/",
+                "OFFEN": "ganzjährlich",
+                "BETREIBER": "Privat",
+                "UEBERNACHTUNG": "nein",
+                "F10": null
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 14,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    11.451670000000036,
+                    47.313900000000046
+                ]
+            },
+            "properties": {
+                "OBJECTID": 14,
+                "ID": 14,
+                "NAME": "Thaurer Alm",
+                "LAT": 47.313899999999997,
+                "LNG": 11.45167,
+                "SEEHOEHE": 1464,
+                "HOMEPAGE": "https://thaureralm.at/",
+                "OFFEN": "Anfang Mai bis Ende Oktober",
+                "BETREIBER": "Privat",
+                "UEBERNACHTUNG": "nein",
+                "F10": null
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 15,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    11.387830000000065,
+                    47.303400000000067
+                ]
+            },
+            "properties": {
+                "OBJECTID": 15,
+                "ID": 15,
+                "NAME": "Bodenstein Alm",
+                "LAT": 47.303400000000003,
+                "LNG": 11.387829999999999,
+                "SEEHOEHE": 1661,
+                "HOMEPAGE": "https://www.innsbruck.info/sehen-und-erleben/essen-und-trinken/restaurantsuche/detail/infrastruktur/bodenstein-alm-innsbruck.html",
+                "OFFEN": "NA",
+                "BETREIBER": "Privat",
+                "UEBERNACHTUNG": "nein",
+                "F10": null
+            }
+        }
+    ]
+}
