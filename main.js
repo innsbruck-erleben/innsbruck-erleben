@@ -80,33 +80,37 @@ function getColor(value, ramp) { //value = temperatur, ramp= Colorramp
   }
 }
 
-//Temperatur
-function writeTemperatureLayer(jsondata) {
+// Icon für Temperatur 
+function writeTemperatureLayer (jsondata){
   L.geoJSON(jsondata, {
-    filter: function (feature) {
-      if (feature.properties.LT > -50 && feature.properties.LT < 50) {
-        return true;
+      filter: function (feature){
+          if (feature.properties.LT > -50 && feature.properties.LT <50){
+              return true;
 
-      }
-    },
-    pointToLayer: function (feature, latlng) {
-      let color = getColor(feature.properties.LT, COLORS.temperatur); //Variable definieren mit zwei werten: da wo wir die werte herbekommen (LT) und wo wir die Farben finden
-      return L.marker(latlng, {
-        icon: L.divIcon({
-          className: "aws-div-icon",
-          html: `<span style= "background-color:${color}">${feature.properties.LT.toFixed(1)}</span>`
-        }),
-      });
-    },
+          }
+      },
+      pointToLayer: function (feature, latlng){
+          let color = getColor (feature.properties.LT, COLORS.temperatur); //Variable definieren mit zwei werten: da wo wir die werte herbekommen (LT) und wo wir die Farben finden
+          return L.marker (latlng, {
+              icon: L.divIcon({
+                  className: "aws-div-icon",
+               html: `<span style= "background-color:${color}">${feature.properties.LT.toFixed(1)}</span>`  
+              }),
+          });
+      },
   }).addTo(themaLayer.temperature);
 }
 
 
 
+// Wetterstationen Tirol
 async function loadStations(url) {
   let response = await fetch(url);
   let jsondata = await response.json();
-  writeTemperatureLayer(jsondata);
+  //writeStationLayer (jsondata);
+  writeTemperatureLayer (jsondata);
+
+  // Wetterstationen mit Icons und Popups implementieren
 
 }
 loadStations("https://static.avalanche.report/weather_stations/stations.geojson");
