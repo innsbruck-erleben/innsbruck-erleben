@@ -61,6 +61,7 @@ async function loadTemperature (url) {
 }
 loadTemperature("https://static.avalanche.report/weather_stations/stations.geojson");
 */
+
 L.control.rainviewer({ 
     position: 'bottomleft',
     nextButtonText: '>',
@@ -71,6 +72,7 @@ L.control.rainviewer({
     animationInterval: 500,
     opacity: 0.5
 }).addTo(map);
+
 async function showBadeseen (url){
     let response = await fetch (url);
     let jsondata = await response.json ();
@@ -78,7 +80,8 @@ async function showBadeseen (url){
         pointToLayer: function (feature, latlng) {
             return L.marker (latlng, {
                 icon: L.icon({
-                    iconUrl: `icons/swim.png`,
+
+                    iconUrl: "swim.png",
                     iconAnchor: [16, 37],
                     popupAnchor: [0, -37],
                 })
@@ -90,20 +93,14 @@ async function showBadeseen (url){
             <h4>${prop.NAME}</h4>
             <br>
             <img src="${prop.NAME}.jpg" style = "width:150px", class= "center"></img>
-            <br>
-                <ul>
-                <li>Lufttemperatur (°C): ${prop.LT||"keine Angabe"}</li>
-                <li>Wassertemperatur (°C): ${prop.W||"keine Angabe"}</li>
-                <li>Wasserqualität: ${prop.A||"keine Angabe"}</li>
-                <li>Wassertemperatur in °C: ${prop.WASSERTEMP||"keine Angabe"}</li>
-                <li>Wasserqualität: ${prop.WASSERQUAL||"keine Angabe"}</li>
-                </ul>
-                <span>${pointInTime.toLocaleString()}</span>
-            `);
-        }
-    }).addTo(themaLayer.badeseen);
+            <ul> 
+            <li>Wassertemperatur in °C: ${prop.WASSERTEMP||"keine Angabe"}</li>
+            <li>Wasserqualität: ${prop.WASSERQUAL||"keine Angabe"}</li>
+            </ul>
+        `);
+    }
+}).addTo(themaLayer.badeseen);
 }
-showBadeseen ("badeseen.json");
 showBadeseen ("see.geoJson");
 
 
