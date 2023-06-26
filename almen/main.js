@@ -79,6 +79,6 @@ async function showHuetten (url) {
         }
     }).addTo(themaLayer.huetten); //alle Almen anzeigen als Marker
 }
-showHuetten ("huetten_json.geojson");
+showHuetten ("huette.geojson");
 
 
