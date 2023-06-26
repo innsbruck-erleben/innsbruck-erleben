@@ -107,5 +107,8 @@ a {
         -1px -1px 0 white,
         -1px 1px 0 white,
         1px -1px 0 white,
-        1px 1px 0 white,
-}
+        1px 1px 0 white;
+
+
+} /*span, damit es ein Kästchen drum rum macht
+text shadow: macht einen Schatten um den Rand*/
