@@ -93,6 +93,7 @@ async function showBadeseen (url){
             <h4>${prop.NAME}</h4>
             <br>
             <img src="${prop.NAME}.jpg" style = "width:150px", class= "center"></img>
+            <ul> 
             <li>Wassertemperatur in °C: ${prop.WASSERTEMP||"keine Angabe"}</li>
             <li>Wasserqualität: ${prop.WASSERQUAL||"keine Angabe"}</li>
             </ul>
