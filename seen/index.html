@@ -8,102 +8,172 @@
     <title>Badeseen rund um Innsbruck</title>
 
 
-   <!-- Font Awesome -->
-   <link rel="stylesheet" href="https://cdnjs.cloudf:lare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudf:lare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-   <!-- Leaflet -->
-   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
-   <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js" integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
+    <!-- Leaflet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+        integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+        integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
 
-   <!-- Leaflet Providers -->
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-providers/1.13.0/leaflet-providers.min.js" integrity="sha512-5EYsvqNbFZ8HX60keFbe56Wr0Mq5J1RrA0KdVcfGDhnjnzIRsDrT/S3cxdzpVN2NGxAB9omgqnlh4/06TvWCMw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Leaflet Providers -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-providers/1.13.0/leaflet-providers.min.js"
+        integrity="sha512-5EYsvqNbFZ8HX60keFbe56Wr0Mq5J1RrA0KdVcfGDhnjnzIRsDrT/S3cxdzpVN2NGxAB9omgqnlh4/06TvWCMw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-   <!-- Leaflet FullScreen -->
-   <script src='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/Leaflet.fullscreen.min.js'></script>
-   <link href='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/leaflet.fullscreen.css' rel='stylesheet' />
+    <!-- Leaflet FullScreen -->
+    <script src='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/Leaflet.fullscreen.min.js'></script>
+    <link href='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/leaflet.fullscreen.css'
+        rel='stylesheet' />
 
     <!-- Leaflet Hash-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-hash/0.2.1/leaflet-hash.js" integrity="sha512-2KBa5eJPxTH3HX7jCWrbO+NYNLV8xrnX5lDB7FTs9HFJ8jpO1MTV6MkmNNaia79k+xOk8q965FkqAjwEYCfDAA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
- 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-hash/0.2.1/leaflet-hash.js"
+        integrity="sha512-2KBa5eJPxTH3HX7jCWrbO+NYNLV8xrnX5lDB7FTs9HFJ8jpO1MTV6MkmNNaia79k+xOk8q965FkqAjwEYCfDAA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-  <!-- Leaflet Rainviewer-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/mwasil/Leaflet.Rainviewer/leaflet.rainviewer.css"/>
+
+    <!-- Leaflet Rainviewer-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/mwasil/Leaflet.Rainviewer/leaflet.rainviewer.css" />
     <script src="https://cdn.jsdelivr.net/gh/mwasil/Leaflet.Rainviewer/leaflet.rainviewer.js"></script>
 
     <!-- eigene Stile und Hauptskript -->
     <link rel="stylesheet" href="main.css">
     <script defer src="main.js"></script>
-    
+
 
 
 </head>
+
 <body>
 
-<header>
-    <!--Bildquelle: https://pixabay.com/de/photos/see-gleinker-see-ober%C3%B6sterreich-7310303/-->
-    <!--Bild größe anpassen-->
-    <img src="images/titelbild_see.jpg" alt="Titelbild Badesee" class="center">
-</header>
+    <header>
+        <!--Bildquelle: https://pixabay.com/de/photos/see-gleinker-see-ober%C3%B6sterreich-7310303/-->
+        <!--Bild größe anpassen-->
+        <img src="images/titelbild_see.jpg" alt="Titelbild Badesee" class="center">
+    </header>
 
-<main>
-    <article class="shadow">
-        <nav>
-            <a href="https://innsbruck-erleben.github.io/index.html">Zurück zur Übersicht</a>
-        </nav>
-        <h1>Badeseen rund um Innsbruck</h1>
-        <p class="format"> Hier kommt ein kurzer Text rein </p> 
-        <details><summary class="format">Baggersee Roßau</summary>
-            <nav class="format">
-                <li>Öffnungszeiten (Mai-September): 9:00 - 18:00 Uhr </li>
-                <li>Tageskarte: 3€</li>
-                <li>Anreise von Innsbruck Zentrum: 
-                    <li class="format2">20 min per Fahrrad</li>
-                    <li>30 min mit ÖPNV (Linie R oder F von Station 'Anichstraße/Rathausgalerie' zu 'Innbruck Baggersee')</li>
-                    <li>10 min mit dem Auto</li>
-                </li>
+    <main>
+        <article class="shadow">
+            <nav>
+                <a href="https://innsbruck-erleben.github.io/index.html">Zurück zur Übersicht</a>
             </nav>
-        </details>
-        <details><summary class="format">Lanser See</summary>
-            <p>Hier ist der Inhalt, der ausgeklappt wird.</p>
-        </details>
-        <details><summary class="format">Natterer See</summary>
-            <p>Hier ist der Inhalt, der ausgeklappt wird.</p>
-        </details>
-        <details><summary class="format">Seefelder See</summary>
-            <p>Hier ist der Inhalt, der ausgeklappt wird.</p>
-        </details>
-        <details><summary class="format">Weißlahn See</summary>
-            <p>Hier ist der Inhalt, der ausgeklappt wird.</p>
-        </details>
-        <details><summary class="format">Möserer See</summary>
-            <p>Hier ist der Inhalt, der ausgeklappt wird.</p>
-        </details>
+            <h1>Badeseen rund um Innsbruck</h1>
+            <p class="format"> Ein entspannter Tag am See oder eine kurze Erfrischung nach dem Bergerlebnis? Die
+                Badeseen in und um Innsbruck bieteten dafür perfekte Möglichkeiten. In den zahlreichen Seen kann man
+                sich in traumhafter Kulisse abkühlen und dabei das Bergpanorama genießen. Was bietet sich an einem
+                warmen Sommertag mehr an, als der Sprung ins kühle Nass? Neben dem Badeerlebnis bieten die Seen ein
+                gastronomisches Angebot und Liegeplätze.
+                Für ein actionreiches Badeerlebnis bietet der Natterer See optimale Voraussetzungen. Der See bietet
+                einen Aquapark mit zahlreichen Highlight, wie z.B. ein Wassertrampolin und eine Riesenrutsche.
+                Abgerundet wird das Angebot von einem Bootsverleih. Etwas ruhiger geht es am Lanser See zu. Wer einen
+                idyllischen Badeort mit gehobenem gastronomischen Angebot sucht, wird hier fündig. Etwas außerhalb der
+                Tiroler Landeshauptstadt befindet sich der Wildsee, auch hier ist man als ruhesuchender Badegast an der
+                richtigen Adresse. Zudem hat man hier beim Baden einen grandiosen Ausblick auf die Gipfel der
+                umliegenden Berge. Der Rossauer See, auch als Baggersee bekannt, ist an sonnigen Sommertagen ein
+                beliebter Treffpunkt und bietet neben dem Badespaß auch eine großzügige Liegefläche und Plätze für
+                weitere sportliche Aktivitäten. Besonders beliebt ist der Beachvolleyballplatz. Wer ein ruhiges
+                Badevergnügen in der Natur sucht, der wird am Möserer See fündig. Dieser Badesee besticht durch seine
+                romantische Idylle. Etwas sportlicher geht es am Badesee Weißlahn zu, hier kommen sportliche Badegäste
+                voll auf ihre Kosten!
+            </p>
+            <details>
+                <summary class="format">Baggersee Roßau</summary>
+                <nav class="format">
+                    <li>Öffnungszeiten (Mai-September): 9:00 - 18:00 Uhr </li>
+                    <li>Tageskarte: 3 €</li>
+                    <li>Anreise von Innsbruck Zentrum:
+                    <li class="format2">20 min per Fahrrad</li>
+                    <li class="format2">30 min mit ÖPNV (Linie R oder F von Station 'Anichstraße/Rathausgalerie' zu 'Innbruck
+                        Baggersee' und dann 5 min Fußweg)</li>
+                    <li class="format2">10 min mit dem Auto</li>
+                    </li>
+                </nav>
+            </details>
+            <details>
+                <summary class="format">Lanser See</summary>
+                <nav class="format">
+                    <li>Öffnungszeiten (Mai-September): 9:00 - 19:30 Uhr </li>
+                    <li>Tageskarte: 7 €</li>
+                    <li>Anreise von Innsbruck Zentrum:
+                    <li class="format2">20 min per Fahrrad</li>
+                    <li class="format2">30 min mit ÖPNV (Linie J von Station 'Marktplatz' zu 'Igls Romedihof' und dann 10 min Fußweg)</li>
+                    <li class="format2">20 min mit dem Auto</li>
+                    </li>
+            </details>
+            <details>
+                <summary class="format">Natterer See</summary>
+                <nav class="format">
+                <li>Öffnungszeiten (Mai-September): 9:00 - 19:00 Uhr </li>
+                <li>Tageskarte: 7 €</li>
+                <li>Anreise von Innsbruck Zentrum:
+                <li class="format2">45 min per Fahrrad</li>
+                <li class="format2">35 min mit ÖPNV (von Station 'Marktplatz' zu 'HBF Innsbruck', mit Buslinie 4142 zur Station 'Natters Natterer See Camping' und dann 2 min Fußweg)</li>
+                <li class="format2">20 min mit dem Auto</li>
+            </details>
+            <details>
+                <summary class="format">Seefelder See</summary>
+                <nav class="format">
+                <li>Öffnungszeiten (Mai-September): keine Angaben </li>
+                <li>Tageskarte: keine Angaben</li>
+                <li>Anreise von Innsbruck Zentrum:
+                <li class="format2">120 min per Fahrrad</li>
+                <li class="format2">60 min mit ÖPNV (von Station 'Marktplatz' zu 'Westbahnhof', mit Linie S6 zur Station 'Seefeld in Tirol Bahnhof' und dann 10 min Fußweg)</li>
+                <li class="format2">30 min mit dem Auto</li>
+            </details>
+            <details>
+                <summary class="format">Weißlahn See</summary>
+                <nav class="format">
+                <li>Öffnungszeiten (Mai-September): keine Angaben </li>
+                <li>Tageskarte: 4,50 €</li>
+                <li>Anreise von Innsbruck Zentrum:
+                <li class="format2">75 min per Fahrrad</li>
+                <li class="format2">60 min mit ÖPNV (von Station 'Marktplatz' zu 'HBF Innsbruck', mit Linie S5 zur Station 'Terfens-Weer Bahnhof' und dann 25 min Fußweg)</li>
+                <li class="format2">30 min mit dem Auto</li>
+            </details>
+            <details>
+                <summary class="format">Möserer See</summary>
+                <nav class="format">
+                <li>Öffnungszeiten (Mai-September): keine Angaben </li>
+                <li>Tageskarte: frei</li>
+                <li>Anreise von Innsbruck Zentrum:
+                <li class="format2">150 min per Fahrrad</li>
+                <li class="format2">keine Angaben</li>
+                <li class="format2">40 min mit dem Auto</li>
+            </details>
 
-        <!--<h3>Erlebniskarte</h3>  -->
-        <div id="map" ></div>
-        <p class="format">
-            *Daten vom 25.06.2023
-        </p>
+            <!--<h3>Erlebniskarte</h3>  -->
+            <div id="map"></div>
+            <p class="format">
+                *Daten vom 25.06.2023
+            </p>
 
 
-        <nav> 
-            <p class="format">Du bist neugierig, was man sonst noch alles um Innsbruck um erleben und entdecken kann? Dann schau doch auch mal bei den <a href="https://innsbruck-erleben.github.io/almen/index.html">Hütten und Almen</a> oder beim <a href="https://innsbruck-erleben.github.io/weitwanderweg/index.html">Weitwanderweg  Innsbruck</a> vorbei!</p>
+            <nav>
+                <p class="format">Du bist neugierig, was man sonst noch alles um Innsbruck um erleben und entdecken
+                    kann? Dann schau doch auch mal bei den <a
+                        href="https://innsbruck-erleben.github.io/almen/index.html">Hütten und Almen</a> oder beim <a
+                        href="https://innsbruck-erleben.github.io/weitwanderweg/index.html">Weitwanderweg Innsbruck</a>
+                    vorbei!</p>
+            </nav>
+
+
+        </article>
+
+        <nav>
+            <a href="https://github.com/innsbruck-erleben/"> <i class="fab fa-github" class="links"></i>Github
+                Innsburuck erleben</a>
         </nav>
-        
-
-    </article>
-
-    <nav>
-        <a href="https://github.com/innsbruck-erleben/"> <i class="fab fa-github" class="links"></i>Github Innsburuck erleben</a>
-    </nav>
-
-</main>
-<footer>
+    </main>
+    <footer>
         <strong>Datenquellen:
 
-        </strong> 
+        </strong>
         <a href="https://www.data.gv.at/katalog/dataset/41760DF5-1EBF-424C-8251-EA0466BC2EE5">data.gv.at</a>
-</footer>
+        <a href="https://www.stuwo.at/blog/die-schoensten-badeseen-innsbruck/">infos.badeseen.at</a>
+    </footer>
 
 </body>
 
