@@ -78,7 +78,7 @@ async function showBadeseen (url){
         pointToLayer: function (feature, latlng) {
             return L.marker (latlng, {
                 icon: L.icon({
-                    iconUrl: `icons/icon/swim.png`,
+                    iconUrl: `icons/swim.png`,
                     iconAnchor: [16, 37],
                     popupAnchor: [0, -37],
                 })
