@@ -58,8 +58,8 @@ article h3 {
 
 
 #map { 
-    width: 60%;
-    height: 400px;
+    width: 90%;
+    height: 600px;
     border: 1px solid silver;
     margin: auto;
 } /*#maps der Hashtag ist eine ID*/
@@ -99,7 +99,7 @@ a {
     }
 }
 .aws-div-icon span{
-    font-size: 1.25em;
+    font-size: 1em;
     font-weight: bold;
     padding: 0.3em;
     border: 1px solid silver;
