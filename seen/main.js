@@ -78,8 +78,7 @@ async function showBadeseen (url){
         pointToLayer: function (feature, latlng) {
             return L.marker (latlng, {
                 icon: L.icon({
-                    iconUrl: "icons/icon/swim.png",
-                    iconUrl: "swim.png",
+                    iconUrl: `icons/icon/swim.png`,
                     iconAnchor: [16, 37],
                     popupAnchor: [0, -37],
                 })
@@ -88,8 +87,10 @@ async function showBadeseen (url){
         onEachFeature: function (feature, layer) {
             let prop = feature.properties;
             layer.bindPopup (`
-            <h4>${prop.BADEGEWÄSSERNAME}</h4>
             <h4>${prop.NAME}</h4>
+            <br>
+            <img src="${prop.NAME}.jpg" style = "width:150px", class= "center"></img>
+            <br>
                 <ul>
                 <li>Lufttemperatur (°C): ${prop.LT||"keine Angabe"}</li>
                 <li>Wassertemperatur (°C): ${prop.W||"keine Angabe"}</li>
